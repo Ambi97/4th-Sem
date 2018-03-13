@@ -10,7 +10,6 @@ architecture func of SRFF is
         process(s,r,q,qnext)
             begin
                 qnext<=s or ((not r) and q);
-            end if;
             end process;
         end func;
 
